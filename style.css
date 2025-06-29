@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.weather_container {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.temp {
+    font-size: 4rem;
+}
+
+.time_location {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.condition {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+nav {
+    width: 100%;
+    max-width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search_area {
+    padding: 0.75rem;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 1rem;
+    border-bottom: 2px solid white;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+nav form button {
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: maroon;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.error_message {
+    margin-top: 1rem;
+    color: yellow;
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 0 1rem;
+}
+
+/* 📱 Responsive Design: For devices smaller than 600px */
+@media (max-width: 600px) {
+    .temp {
+        font-size: 3rem;
+    }
+
+    .time_location {
+        font-size: 1.2rem;
+    }
+
+    .condition {
+        font-size: 1rem;
+    }
+
+    nav form button {
+        width: 90%;
+    }
+
+    .search_area {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+}
