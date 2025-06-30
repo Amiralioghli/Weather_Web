@@ -25,26 +25,26 @@ function getEmoji(condition) {
     return "🌈"; // Default emoji
 }
 
-function setBackground(condition) {
-    const container = document.querySelector(".container");
-    condition = condition.toLowerCase();
+//function setBackground(condition) {
+//    const container = document.querySelector(".container");
+//    condition = condition.toLowerCase();
 
-    if (condition.includes("sunny") || condition.includes("clear")) {
-        container.style.background = "linear-gradient(to right, #fceabb, #f8b500)"; // Sunny yellow
-    } else if (condition.includes("cloud")) {
-        container.style.background = "linear-gradient(to right, #bdc3c7, #2c3e50)"; // Cloudy gray
-    } else if (condition.includes("rain")) {
-        container.style.background = "linear-gradient(to right, #4e54c8, #8f94fb)"; // Rainy blue
-    } else if (condition.includes("snow")) {
-        container.style.background = "linear-gradient(to right, #e0eafc, #cfdef3)"; // Snowy light blue
-    } else if (condition.includes("mist") || condition.includes("fog")) {
-        container.style.background = "linear-gradient(to right, #606c88, #3f4c6b)"; // Foggy
-    } else if (condition.includes("storm") || condition.includes("thunder")) {
-        container.style.background = "linear-gradient(to right, #283e51, #485563)"; // Storm dark
-    } else {
-        container.style.background = "linear-gradient(to right, #8360c3, #2ebf91)"; // Default colorful
-    }
-}
+//    if (condition.includes("sunny") || condition.includes("clear")) {
+//        container.style.background = "linear-gradient(to right, #fceabb, #f8b500)"; // Sunny yellow
+//    } else if (condition.includes("cloud")) {
+//        container.style.background = "linear-gradient(to right, #bdc3c7, #2c3e50)"; // Cloudy gray
+//    } else if (condition.includes("rain")) {
+//      container.style.background = "linear-gradient(to right, #4e54c8, #8f94fb)"; // Rainy blue
+//    } else if (condition.includes("snow")) {
+//        container.style.background = "linear-gradient(to right, #e0eafc, #cfdef3)"; // Snowy light blue
+//    } else if (condition.includes("mist") || condition.includes("fog")) {
+//        container.style.background = "linear-gradient(to right, #606c88, #3f4c6b)"; // Foggy
+//    } else if (condition.includes("storm") || condition.includes("thunder")) {
+//        container.style.background = "linear-gradient(to right, #283e51, #485563)"; // Storm dark
+//    } else {
+//        container.style.background = "linear-gradient(to right, #8360c3, #2ebf91)"; // Default colorful
+//    }
+//}
 
 
 const fetchResults = async (targetLocation, showError = false) => {
@@ -81,7 +81,7 @@ function updateDetails(temp, locationName, time, condition) {
     dateandTimeField.innerText = time;
     conditionField.innerText = condition;
     emojiField.innerText = getEmoji(condition);
-    setBackground(condition); // 🔥 Add this line to apply background
+    //setBackground(condition); // 🔥 Add this line to apply background
 }
 
 
